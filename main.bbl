@@ -1,0 +1,25 @@
+\begin{thebibliography}{1}
+
+\bibitem{simon1982schrodinger}
+Barry Simon.
+\newblock Schr{\"o}dinger semigroups.
+\newblock {\em Bulletin of the American Mathematical Society}, 7(3):447--526,
+  1982.
+
+\bibitem{von1989new}
+Henrique von Dreifus and Abel Klein.
+\newblock A new proof of localization in the anderson tight binding model.
+\newblock {\em Communications in Mathematical Physics}, 124(2):285--299, 1989.
+
+\bibitem{jitomirskaya1999metal}
+Svetlana~Ya Jitomirskaya.
+\newblock Metal-insulator transition for the almost mathieu operator.
+\newblock {\em Annals of Mathematics}, 150(3):1159--1175, 1999.
+
+\bibitem{cycon2009schrodinger}
+Hans~L Cycon, Richard~G Froese, Werner Kirsch, and Barry Simon.
+\newblock {\em Schr{\"o}dinger operators: With application to quantum mechanics
+  and global geometry}.
+\newblock Springer, 2009.
+
+\end{thebibliography}

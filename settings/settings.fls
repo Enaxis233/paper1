@@ -1,0 +1,4 @@
+PWD C:/Users/Enaxis/Desktop/phd paper1/settings
+INPUT C:/Users/Enaxis/AppData/Local/MiKTeX/2.9/miktex/data/le/pdftex/pdflatex.fmt
+INPUT settings.tex
+OUTPUT settings.log
