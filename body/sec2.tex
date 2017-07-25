@@ -1,10 +1,7 @@
-\section{proof abstract}
-The proof is following \cite{jitomirskaya1999metal}
-'s idea.
-
-First of all,
+\section{main idea}
+We are gonna introduce the main idea in this section.
 \begin{definition}[$g.e.v.$]
-    $E$ is a generalized eigenvalue (denote as $g.e.v.$), if there exists a nonzero polynomially bounded function $\Psi(n)$ such that $H\Psi=E\Psi$. We call $\Psi(n)$ generalized eigenfunction.
+    We call $E$ a generalized eigenvalue (denote as $g.e.v.$), if there exists a nonzero polynomially bounded function $\Psi(n)$ such that $H\Psi=E\Psi$. We call $\Psi(n)$ generalized eigenfunction.
 \end{definition}
 Then due to the fact from \cite{simon1982schrodinger} that:
 \textit{spectrally almost surely,
@@ -12,8 +9,73 @@ Then due to the fact from \cite{simon1982schrodinger} that:
 \sigma(H)=\overline{\{E:E~is~g.e.v.\}},
 \]}
 We only need to show:
-\begin{thm}
+\begin{thm}\label{thm1}
   For a.e. $\omega$, $\forall~g.e.v.~E$, the corresponding generalized eigenfunction $\Psi_{\omega,E}(n)$ decays exponentially in $n$.
 \end{thm}
 
-Since then, $E$ is a pure point.
+In order to get the dacaying speed of $\Psi$, We estimates the decaying speed of the Green's functions.
+\begin{definition}
+  Assume $[a,b]$ is an interval, $a,b\in\mathbb{Z}$, define $H_[a,b],\omega$ to be the the operator $H_\omega$ resticted to $[a,b]$ with zero boundary condition outside $[a,b]$.
+\end{definition}
+Note that it can be expressed as a "$b-a+1$"-dim matrix.
+\begin{definition}
+  The Green's function defined on $[a,b]$ for $H_\omega$ with energy $E\notin\sigma(H)$ is
+  \[
+    G_{[a,b],E,\omega}=(H_{[a,b],\omega}-E)^{-1}
+  \]
+\end{definition}
+Note that this can be expressed as a "$b-a+1$"-dim matrix, too. Denote its $x$ line $y$ column elements as $G_{[a,b],E,\omega}(x,y)$.
+
+By the well-known formula:
+  \begin{equation}\label{possion}
+    \Psi(x)=G_{[a,b],E,\omega}(x,a)\Psi(a)+G_{[a,b],E,\omega}(x,b)\Psi(b),\quad x\in[a,b]
+  \end{equation}
+
+If one can get that, the Green's function near $n$, say, for example on $[n-k,n+k]$, is decaying somehow exponentially in $n$ as $n$ growing, then since $\Psi$ on the  right-hand-side is polynomially bounded, $\Psi(n)$ on the left-hand-side will decay exponentially in $n$, too.
+
+This, together with another purposes for using large deviation estimates, which you will see in !!!!(one lemma), inspires us to define "regular and singular".
+
+\begin{definition}
+$\mathcal{A}_{[a,b]}=\{[a,b],[a,b-1],[a+1,b],[a+1,b-1]\}$
+\end{definition}
+\begin{definition}
+   For $c>0, k\in\mathbb{Z}$, we say $x\in\mathbb{Z}~$ is $(c,k,E,\omega)$-regular, if $~\exists A\in\mathcal{A}_{[x-k,x+k]}$, s.t.
+  \[
+    G_{A,E,\omega}(x,\partial A) \leq e^{-c\abs{x-\partial A}}
+  \]
+  i.e. if $A=[x_1,x_2]$
+  \[G_{A,E,\omega}(x,x_i) \leq e^{-c\abs{x-x_i}},\quad i=1,2\]
+  Otherwise, we call it singular.
+\end{definition}
+
+So we only need to prove
+\begin{thm}
+  $\exists \Omega_0$ with $P(\Omega_0)=1$, s.t. $\forall \tilde{\omega}\in\Omega_0$, take $\tilde{E}$ to be any $g.e.v.$ of $H_{\tilde{\omega}}$, $\exists N=N(\tilde{E},\tilde{\omega}),C=C(\tilde{E})$, $\forall n>N$, $2n+1$ is $(C,n,\tilde{E},\tilde{\omega})$ regular.
+\end{thm}
+\begin{remark}
+  It's similar for even terms. We omit them only because of notation reasons.
+\end{remark}
+\begin{remark}
+  Because if we achieve this, denote the corresponding polynomially bounded generalized eigenfunction as $\Psi(n)=\Psi_{\tilde{\omega},\tilde{E}}(n)\leq M(1+n)^p$, for $p>0$. Then $\forall n>N$, $\exists A_n\in\mathcal{A}_{[n+1,3n+1]}$, s.t.
+  \[
+  G_{A,E,\omega}(x,\partial A_n) \leq e^{-C\abs{x-\partial A_n}}
+  \]
+  so by eqution \ref{possion}, and $\abs{x-\partial A_n}\geq n-1$.
+  \[
+  \abs{\Psi(2n+1)}\leq Me^{-C(n-1)}(1+3n+1)^p
+  \]
+  So for large enough $n$, $\Psi(2n+1)$ decays exponentially in $n$. Similarly for even terms and we will get Theorem \ref{thm1}.
+\end{remark}
+
+The main technique is to find the proper set $\Omega_0$. Roughly speaking, the idea is: a point $x$ is $(C,k,E,\omega)$-singular means the corresponding pair $(E,\omega)$ is in some "bad" "large deviation set" for operators restricted near $x$, say, $H_{[x-k,x+k]}$. We can then pick proper set $\Omega_1$ such that these bad sets have small measures. Then pick $\Omega_2$ such that $E$ is not only in these bad sets, but also stay very close to eigenvalues of $H_{[x-k,x+k]}$ which are also in these bad sets. In this case, if we pick $\tilde{\omega}\in\Omega_1\cap\Omega_2$ and if $0$ and $2n+1$ are both $(C,n,\tilde{E},\tilde{\omega})$-singular, then $\tilde{E}$ will  be close to both eigenvalues $E_{i,n}$ of $H_{[-n,n]}$ near $0$ and eigenvalues $E_{j,n}$ of $H_{[n+1,3n+1]}$ near $2n+1$. So now $\tilde{E}$ is in bad sets for both intervals and are closed to both e.v., where each e.v. only belongs to bad sets for their own intervals. Which leads to a contradiction because the bad sets are so small that we can pick $\Omega_3$ by Borel Cantelli, such that eventually all the eigenvalues of $[n+1,3n+1]$ can't stay in bad set for $[-n,n]$,
+
+
+
+% In order to find the set $\Omega_0$, we give these three Theorems, each provides us some nice properties we need to make $2n+1$ $(C,n,\tilde{E},\tilde{\omega})$-regular.
+%
+% \begin{thm}
+%   for $a.e.\omega$ (denote the set as $\Omega_1$), $\exists N_1=N_1(\omega)$, s.t. $\forall n>N_1$,
+%   \[
+%   m(B_{[-n,n],\omega}^{-})\leq Ce^{-(\eta-\delta)(2n+1)}
+%   \]
+% \end{thm}
