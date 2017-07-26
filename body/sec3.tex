@@ -1,0 +1,198 @@
+\section{main technique}
+% The main technique is to find the proper set $\Omega_0$. Roughly speaking, the idea is: a point $x$ is $(C,k,E,\omega)$-singular means the corresponding pair $(E,\omega)$ is in some "bad" "large deviation set" for operators restricted near $x$, say, $H_{[x-k,x+k]}$. We can then pick proper set $\Omega_1$ such that these bad sets have small measures. Then pick $\Omega_2$ such that $E$ is not only in these bad sets, but also stay very close to eigenvalues of $H_{[x-k,x+k]}$ which are also in these bad sets. In this case, if we pick $\tilde{\omega}\in\Omega_1\cap\Omega_2$ and if $0$ and $2n+1$ are both $(C,n,\tilde{E},\tilde{\omega})$-singular, then $\tilde{E}$ will  be close to both eigenvalues $E_{i,n}$ of $H_{[-n,n]}$ near $0$ and eigenvalues $E_{j,n}$ of $H_{[n+1,3n+1]}$ near $2n+1$. So now $\tilde{E}$ is in bad sets for both intervals and are closed to both e.v., where each e.v. only belongs to bad sets for their own intervals. Which leads to a contradiction because the bad sets are so small that we can pick $\Omega_3$ by Borel Cantelli, such that eventually all the eigenvalues of $[n+1,3n+1]$ can't stay in bad set for $[-n,n]$,
+
+% The main idea is that a point $x$ is $(C,k,E,\omega)$-singular means somehow the pair $(E,\omega)$ is in some "bad" "large deviation set" for operators restricted near $x$, say, $H_{[x-k,x+k]}$.(see lemma1) However we can get from large deviation theorem that these sets are small, so both $E$ and eigenvalues of $H_{[x-k,x+k]}$, which also lies in these bad sets, will eventually get closed to each other due to some nice properties of these sets.
+
+We introduce the large deviation theorem here without proof.\cite{bucaj2017localization}
+\begin{thm}[large deviation estimates]
+  For any $\epsilon>0$, there exists $C=C(\epsilon)>0$,$\eta=\eta(\epsilon)>0$ such that
+  \[
+  \mu \left\{ \omega:\left\vert \frac{1}{b-a+1} ln\Vert T_{[a,b],E,\omega}\Vert-\gamma(E) \right\vert\geq\epsilon
+   \right\} \leq Ce^{-\eta (b-a+1)}
+  \]
+\end{thm}
+\begin{remark}
+  If we denote
+\[
+\begin{split}
+    B_{[a,b]}=&\left\{(E,\omega):\exists A\in\mathcal{A}_{[a,b]} s.t. |P_{A,E,\omega}|\geq e^{(\gamma(E)+\epsilon)(b-a+1)}\right\} \\
+    &\bigcup \left\{(E,\omega):\forall A\in\mathcal{A}_{[a,b]}, |P_{A,E,\omega}|\leq e^{(\gamma(E)-\epsilon)(b-a+1)}\right\}
+\end{split}
+\]
+  we find that
+  \[
+    B_{[a,b]}\subseteq\left\{(E,\omega):\left\vert\frac{1}{b-a+1} ln\Vert T_{[a,b],E,\omega}\Vert-\gamma(E)\right\vert \geq\epsilon \right\}
+  \]
+  This is the "bad" set. And Large deviation theorem gives us the estimates that for all $E,a,b$
+\begin{equation}\label{ldt}
+  P(\{\omega:(E,\omega)\in B_{[a,b]}\})\leq Ce^{-\eta(b-a+1)}
+\end{equation}
+Moreover, we denote
+\[
+  \begin{split}
+    B_{[a,b]}^{+}&=\left\{(E,\omega):\exists A\in\mathcal{A}_{[a,b]}~s.t. |P_{A,E,\omega}|\geq e^{(\gamma(E)+\epsilon)(b-a+1)}\right\}\\
+    &=\bigcup_{A\in\mathcal{A}_{[a,b]}}\left\{(E,\omega):|P_{A,E,\omega}|\geq e^{(\gamma(E)+\epsilon)(b-a+1)}\right\}
+  \end{split}
+\]
+\[
+  \begin{split}
+    B_{[a,b]}^{-}&=\left\{(E,\omega):\forall A\in\mathcal{A}_{[a,b]},~ad|P_{A,E,\omega}|\leq e^{(\gamma(E)-\epsilon)(b-a+1)}\right\}\\
+    &=\bigcap_{A\in\mathcal{A}_{[a,b]}}\left\{(E,\omega):|P_{A,E,\omega}|\leq e^{(\gamma(E)-\epsilon)(b-a+1)}\right\}
+  \end{split}
+\]
+and denote $B_{[a,b],E}=\{\omega:(E,\omega)\in B_{[a,b]}\}$. Others similar.
+\end{remark}
+
+\begin{lemma}\label{lemma1}
+ $n \geq 2$, if $x$ is $(\gamma(E))-8\epsilon,n,E,\omega)$-singular, then $(E,\omega)\in B_{[x-n,x+n]}^-\cup B_{[x-n,x]}^+\cup B_{[x,x+n]}^+$.
+\end{lemma}
+\begin{remark}
+  Note that from \eqref{ldt}, for all $E,x,n\geq 2$,
+  \[
+    P(B_{[x-n,x+n],E}^-\cup B_{[x-n,x],E}^+\cup B_{[x,x+n],E}^+)\leq 3Ce^{-\eta n}
+  \]
+\end{remark}
+\begin{proof}
+Assume not,
+\[
+  \left\{
+  \begin{aligned}
+    &~\exists A_{[x-n,x+n]}\in\mathcal{A}_{[x-n,x+n]}~s.t.~ |P_{A_{[x-n,x+n]},E,\omega}|\geq e^{(\gamma(E)+\epsilon)(2n+1)}\\
+    &~\forall A_{[x-n,x]}\in\mathcal{A}_{[x-n,x]},~ |P_{A_{[x-n,x]},E,\omega}|\leq e^{(\gamma(E)-\epsilon)(n+1)}\\
+    &~\forall A_{[x,x+n]}\in\mathcal{A}_{[x,x+n]},~ |P_{A_{[x,x+n]},E,\omega}|\leq e^{(\gamma(E)-\epsilon)(n+1)}
+  \end{aligned}
+  \right.
+\]
+Pick $A_{[x-n,x+n]}$ as above. If denote it as $[x_1,x_2]$, i.e. $x_1= x-n$ or $x-n+1$, $x_2=x+n$ or $x+n-1$, then
+\[
+  \begin{aligned}
+    \left\vert G_{[x_1,x_2],E,\omega}(x,x_1)\right\vert
+    &=  \frac{\left\vert P_{[x+1,x_2],E,\omega}\right\vert}{\left\vert P_{[x_1,x_2],E,\omega}\right\vert}\\
+    &\leq  \frac{e^{(\gamma(E)+\epsilon)(x_2-x+1)}}{e^{(\gamma(E)-\epsilon)(x_2-x_1+1)}}\\
+    &\leq  e^{-\gamma(E)\abs{x-x_1}+\epsilon(\abs{x_2-x+1}+\abs{x_2-x_1+1})}\\
+    &\leq  e^{-\gamma(E)\abs{x-x_1}+\epsilon(3n+2)}\\
+    &\leq  e^{-\gamma(E)\abs{x-x_1}+8\epsilon\abs{x-x_1}}\\
+    &\leq  e^{-(\gamma(E)-8\epsilon)\abs{x-x_1}}
+  \end{aligned}
+\]
+Similar for $G_{[x_1,x_2],E,\omega}(x,x_2)$.
+Thus $x$ is $(\gamma(E))-8\epsilon, n, E,\omega)$-regular, contradiction.
+\end{proof}
+
+By Theorem \ref{thm2},
+% From lemma \ref{lemma1}, we get our first restriction on $\Omega$ to make the bad sets have small measure.
+
+\begin{thm}
+  Let $0<\delta<\eta$, Let $E\in I$. For a.e. $\omega$ (denote as $\Omega_1$), $\exists N_1=N_1(\omega)$, s.t. $\forall n>N_1$, $m(B_{[n+1,3n+1],\omega}^-)\leq Ce^{-(\eta-\delta)(2n+1)}$ and $m(B_{[-n,n],\omega}^-)\leq Ce^{-(\eta-\delta)(2n+1)}$
+\end{thm}
+
+\begin{proof}
+  We only prove for $m(B_{[n+1,3n+1],\omega}^-)$.
+
+  By \eqref{ldt}, $\forall E\in I$, $P(B_{[n+1,3n+1],E}^-)\leq Ce^{-\eta(2n+1)}$.
+
+  If we denote
+    \[
+      \Omega_{\delta,n}=\left\{\omega:m(B_{[n+1,3n+1],\omega}^-)\leq e^{-(\eta-\delta)(2n+1)}\right\}
+    \]
+
+  By chebyshev,
+  \[
+    \begin{aligned}
+      P(\Omega_{\delta,n}^c)
+      &\leq e^{(\eta-\delta)n}\int_{\Omega} m(B_{[n+1,3n+1],\omega})dP\omega\\
+      &=    e^{(\eta-\delta)n}\int_I P(B_{[n+1,3n+1],E})dx\\
+      &\leq e^{(\eta-\delta)n}Cm(I)e^{-\eta(2n+1)}\\
+      &=Cm(I)e^{-\delta(2n+1)}
+    \end{aligned}
+  \]
+By Borel-Cantelli lemma, we get
+
+for $a.e.~\omega$, $\exists N$, s.t. $\forall n>N$, $\omega\in\Omega_{\delta,n}$, i.e. $m(B_{[n+1,3n+1,\omega]}^-)\leq e^{-(\eta-\delta)(2n+1)}.$
+Similar for $[-n,n]$, pick insection for $\Omega_1$, and maximum for $N_1$.
+\end{proof}
+
+\begin{thm}[Craig-Simon]
+  For a.e.$\omega$(denote as $\Omega_2$), we have
+  \[
+    \begin{aligned}
+      &\varlimsup_{n\to\infty} \frac{1}{n+1} ln\Vert T_{[-n,0],E,\omega}\Vert\leq\gamma(E)\\
+      &\varlimsup_{n\to\infty} \frac{1}{n+1} ln\Vert T_{[0,n],E,\omega}\Vert\leq\gamma(E)\\
+      &\varlimsup_{n\to\infty} \frac{1}{n+1} ln\Vert T_{[n+1,2n+1],E,\omega}\Vert\leq\gamma(E)\\
+      &\varlimsup_{n\to\infty} \frac{1}{n+1} ln\Vert T_{[2n+1,3n+1],E,\omega}\Vert\leq\gamma(E)
+    \end{aligned}
+  \]
+\end{thm}
+\begin{cor}
+  $\forall \omega\in\Omega_2$, $\exists N_2=N_2(\omega)$, s.t. $\forall n>N_2$,
+  \[
+    \begin{aligned}
+      &\Vert T_{[-n,0],E,\omega}\Vert< e^{(\gamma(E)+\epsilon)(n+1)}\\
+      &\Vert T_{[0,n],E,\omega}\Vert< e^{(\gamma(E)+\epsilon)(n+1)}\\
+      &\Vert T_{[n+1,2n+1],E,\omega}\Vert< e^{(\gamma(E)+\epsilon)(n+1)}\\
+      &\Vert T_{[2n+1,3n+1],E,\omega}\Vert< e^{(\gamma(E)+\epsilon)(n+1)}
+    \end{aligned}
+  \]
+\end{cor}
+\begin{remark}
+  The only difference between here and \cite{craig1983subharmonicity} is the restricted intervals. As long as one follows the proof there, one can get the results here.
+\end{remark}
+% \begin{proof}
+%   Only prove $[n+1,2n+1]$ case.\\
+%   Claim:
+%   \begin{enumerate}
+%     \item $\gamma(E)$ is subharmonic.
+%     \item $\varlimsup_{n\to\infty} \frac{1}{n+1} ln\Vert T_{[n+1,2n+1],E,\omega}\Vert$ is submean
+%   \end{enumerate}
+% \end{proof}
+\begin{thm}
+   $K>0$, For a.e.$\omega$(denote as $\Omega_3=\Omega_3(K)$), $\exists N_3=N_3(\omega)$, $\forall n>N_3$, $\forall E_{j,[n+1,3n+1],\omega}$ being eigenvalue of $H_{[n+1,3n+1],\omega}$, $\forall y_1,y_2$ satisfy $-n\leq y_1\leq y_2\leq n$,  $\abs{-n-y_1}>\frac{n}{K}$, and $\abs{n-y_2}>\frac{n}{K}$,
+ we have $E_{j,[n+1,3n+1],\omega}\notin B_{[-n,y_1],\omega}\cup B_{[y_2,n],\omega}$.
+\end{thm}
+
+\begin{proof}
+In order to use Borel-Cantelli, one need to estimate
+\[
+  P\left(\bigcup\limits_{y_1,y_2}\bigcup\limits_{j=1}^{2n+1}
+  B_{[-n,y_1],E_{j,[n+1,3n+1],\omega}}\cup B_{[y_2,n],E_{j,[n+1,3n+1],\omega}}\right)
+\]
+where $y_1,y_2$ satisfy assumptions above.Denote it by $\bar{P}$ So consider
+\[
+  \begin{aligned}
+    P\left(B_{[y_2,n],E_{j,[n+1,3n+1],\omega}}\right)
+    &= \int_\Omega \chi_{B_{[y_2,n],E_{j,[n+1,3n+1],\omega}}} dP\omega\\
+    &= \int_{S^{2n+1}}\left(\int_{\tilde{\Omega}} \chi_{B}~ d\tilde{\mu}\right)d\mu^{2n+1}(\omega_{n+1},\cdots,\omega_{3n+1})\\
+    &=\int_{S^{2n+1}} \tilde{P}(\tilde{B}_{[y_2,n],E_{j,[n+1,3n+1],\omega}})d\mu^{2n+1}(\omega_{n+1},\cdots,\omega_{3n+1})
+  \end{aligned}
+\]
+where for $\tilde{\Omega}$ and $\tilde{\mu}$ one take away the $[n+1,3n+1]$ terms from $\Omega$ and $\mu^{\mathbb{Z}}$
+However, for any fixed $E$, $B_{[y_2,n],E}$ is of the form
+\[
+  \left(\bigotimes\limits_{i\in[y_2,n]}S\right) \times {B'_{[y_2,n]}}
+\]
+where
+\[
+  B'_{[y_2,n],E}=\left\{\omega|_{[y_2,n]}:\omega\in B_{[y_2,n],E}\right\}
+\]
+So,
+\[
+  \begin{aligned}
+    P(B_{[y_2,n],E})
+    &= \int_{S^{2n+1}}\left(\int_{\tilde{\Omega}} \chi_{B_{[y_2,n],E}}~ d\tilde{\mu}\right)d\mu^{2n+1}(\omega_{n+1},\cdots,\omega_{3n+1})\\
+    &=\tilde{P}(\tilde{B}_{[y_2,n],E})\times 1\times\cdots\times 1\\
+    &=\tilde{P}(\tilde{B}_{[y_2,n],E})
+  \end{aligned}
+\]
+Br \eqref{ldt},
+\[
+\tilde{P}(\tilde{B}_{[y_2,n],E})\leq Ce^{-\eta\abs{n-y_2}},\quad \forall E
+\]
+So
+\[
+P\left(B_{[y_2,n],E_{j,[n+1,3n+1],\omega}}\right)\leq Ce^{\abs{n-y_2-}}\leq Ce^
+\]
+\[
+\bar{P}\leq C(2n+1)^3e^{\abs{n-y_2-}}
+\]
+The sum over n is finite, use Borel-Cantelli, we can get the result.
+\end{proof}

@@ -4,3 +4,5 @@ INPUT sec2.tex
 OUTPUT sec2.log
 INPUT D:/tool/MiKTeX/fonts/tfm/public/cm/cmbx10.tfm
 INPUT D:/tool/MiKTeX/fonts/tfm/public/cm/cmti10.tfm
+OUTPUT sec2.pdf
+INPUT C:/Users/Enaxis/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map

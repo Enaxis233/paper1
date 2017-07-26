@@ -1,10 +1,11 @@
 # Fdb version 3
-["pdflatex"] 1500941612 "sec2.tex" "sec2.pdf" "sec2" 1500941613
+["pdflatex"] 1501008662 "sec2.tex" "sec2.pdf" "sec2" 1501008663
   "C:/Users/Enaxis/AppData/Local/MiKTeX/2.9/miktex/data/le/pdftex/pdflatex.fmt" 1500777127 729938 d73cbba5ac7fece4a3a87bb678c3ea00 ""
+  "C:/Users/Enaxis/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map" 1500791251 82886 2c07a57d8624b1b579a68b5f55fdba28 ""
   "D:/tool/MiKTeX/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "D:/tool/MiKTeX/fonts/tfm/public/cm/cmti10.tfm" 1136768653 1480 aa8e34af0eb6a2941b776984cf1dfdc4 ""
   "sec2.aux" 1500931330 9 a94a2480d3289e625eea47cd1b285758 ""
-  "sec2.tex" 1500941510 3050 996fe4e21d18dd91a9a091db6681d5af ""
+  "sec2.tex" 1501007954 6163 b16e6d22de3ca9d4d793d383057148b6 ""
   (generated)
-  "sec2.pdf"
   "sec2.log"
+  "sec2.pdf"
