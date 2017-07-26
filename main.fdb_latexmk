@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex main"] 1501029031 "main.aux" "main.bbl" "main" 1501031440
+["bibtex main"] 1501108567 "main.aux" "main.bbl" "main" 1501108568
   "D:/tool/MiKTeX/bibtex/bst/bibtex/unsrt.bst" 1291868336 18030 1376b4b231b50c66211e47e42eda2875 ""
   "body/mybib1.bib" 1501023048 1718 a11874df520078fa8cc3f8aa209a8724 ""
-  "main.aux" 1501031427 1160 ba3249a6d21fa11eeb9fb6ff10fdcac7 ""
+  "main.aux" 1501108567 1127 ab99c3dfe2e2f9147a7ff7b694c6e53f ""
   (generated)
   "main.blg"
   "main.bbl"
-["pdflatex"] 1501031427 "main.tex" "main.pdf" "main" 1501031440
+["pdflatex"] 1501108567 "main.tex" "main.pdf" "main" 1501108568
   "C:/Users/Enaxis/AppData/Local/MiKTeX/2.9/fonts/pk/ljfour/public/mathabx/dpi600/matha10.pk" 1500882278 24548 52f08e2b8a79e09f9529586b767a442f ""
   "C:/Users/Enaxis/AppData/Local/MiKTeX/2.9/fonts/pk/ljfour/public/mathabx/dpi600/matha5.pk" 1501027984 14948 a02bfeda1be8ae8244de7aaf35a5a4f9 ""
   "C:/Users/Enaxis/AppData/Local/MiKTeX/2.9/fonts/pk/ljfour/public/mathabx/dpi600/matha7.pk" 1501027984 18928 306e9c69976bc322a3c831240b8697be ""
@@ -73,12 +73,13 @@
   "body/intro.tex" 1500931330 1162 dfccc2892c27da72c82a461b7583037c ""
   "body/sec1.tex" 1500931330 1076 8360b4427c5af4425474b72e63b21a88 ""
   "body/sec2.tex" 1501019756 6209 cc1c2cc516ec05cebe86d1f84b56f464 ""
-  "body/sec3.tex" 1501031438 9803 bdba5d902f15b880f115f5888565481f ""
-  "main.aux" 1501031427 1160 ba3249a6d21fa11eeb9fb6ff10fdcac7 ""
-  "main.bbl" 1501029031 1395 ecab103bb03c0db3fb3256d844612cf1 "bibtex main"
-  "main.tex" 1501027074 390 723c0c67dfc0e481fa2ac604086b93a5 ""
-  "settings/settings.tex" 1501027866 1242 3894116dcdf2c9bbe61b942a7552b8e0 ""
+  "body/sec3.tex" 1501107732 10165 e580a3c4e9ad9491f987d96635b0818f ""
+  "body/sec4.tex" 1501108521 4378 31a9ae42d42d1a6918ba43337b21721e ""
+  "main.aux" 1501108567 1127 ab99c3dfe2e2f9147a7ff7b694c6e53f ""
+  "main.bbl" 1501108567 747 12ab791f3d857186d63915fcbae34f2a "bibtex main"
+  "main.tex" 1501108564 423 0fd002764ceb32f4f4354cdd93d4ca53 ""
+  "settings/settings.tex" 1501107615 1232 86037e4f1381d497276f5cefd370af5d ""
   (generated)
-  "main.pdf"
   "main.aux"
   "main.log"
+  "main.pdf"

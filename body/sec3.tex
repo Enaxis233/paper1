@@ -4,13 +4,13 @@
 % The main idea is that a point $x$ is $(C,k,E,\omega)$-singular means somehow the pair $(E,\omega)$ is in some "bad" "large deviation set" for operators restricted near $x$, say, $H_{[x-k,x+k]}$.(see lemma1) However we can get from large deviation theorem that these sets are small, so both $E$ and eigenvalues of $H_{[x-k,x+k]}$, which also lies in these bad sets, will eventually get closed to each other due to some nice properties of these sets.
 
 We introduce the large deviation theorem here without proof.\cite{bucaj2017localization}
-\begin{thm}[large deviation estimates]
+\begin{lemma}[large deviation estimates]
   For any $\epsilon>0$, there exists $C=C(\epsilon)>0$,$\eta=\eta(\epsilon)>0$ such that
   \[
   \mu \left\{ \omega:\left\vert \frac{1}{b-a+1} ln\Vert T_{[a,b],E,\omega}\Vert-\gamma(E) \right\vert\geq\epsilon
    \right\} \leq Ce^{-\eta (b-a+1)}
   \]
-\end{thm}
+\end{lemma}
 \begin{remark}
   If we denote
 \[
@@ -28,18 +28,18 @@ We introduce the large deviation theorem here without proof.\cite{bucaj2017local
   P(\{\omega:(E,\omega)\in B_{[a,b]}\})\leq Ce^{-\eta(b-a+1)}
 \end{equation}
 Moreover, we denote
-\[
+\begin{equation}\label{B+}
   \begin{split}
     B_{[a,b]}^{+}&=\left\{(E,\omega):\exists A\in\mathcal{A}_{[a,b]}~s.t. |P_{A,E,\omega}|\geq e^{(\gamma(E)+\epsilon)(b-a+1)}\right\}\\
     &=\bigcup_{A\in\mathcal{A}_{[a,b]}}\left\{(E,\omega):|P_{A,E,\omega}|\geq e^{(\gamma(E)+\epsilon)(b-a+1)}\right\}
   \end{split}
-\]
-\[
+\end{equation}
+\begin{equation}\label{B-}
   \begin{split}
     B_{[a,b]}^{-}&=\left\{(E,\omega):\forall A\in\mathcal{A}_{[a,b]},~ad|P_{A,E,\omega}|\leq e^{(\gamma(E)-\epsilon)(b-a+1)}\right\}\\
     &=\bigcap_{A\in\mathcal{A}_{[a,b]}}\left\{(E,\omega):|P_{A,E,\omega}|\leq e^{(\gamma(E)-\epsilon)(b-a+1)}\right\}
   \end{split}
-\]
+\end{equation}
 and denote $B_{[a,b],E}=\{\omega:(E,\omega)\in B_{[a,b]}\}$. Others similar.
 \end{remark}
 
@@ -82,7 +82,7 @@ Thus $x$ is $(\gamma(E))-8\epsilon, n, E,\omega)$-regular, contradiction.
 By Theorem \ref{thm2},
 % From lemma \ref{lemma1}, we get our first restriction on $\Omega$ to make the bad sets have small measure.
 
-\begin{thm}
+\begin{thm}\label{omega1}
   Let $0<\delta<\eta$, Let $E\in I$. For a.e. $\omega$ (denote as $\Omega_1$), $\exists N_1=N_1(\omega)$, s.t. $\forall n>N_1$, $m(B_{[n+1,3n+1],\omega}^-)\leq Ce^{-(\eta-\delta)(2n+1)}$ and $m(B_{[-n,n],\omega}^-)\leq Ce^{-(\eta-\delta)(2n+1)}$
 \end{thm}
 
@@ -108,7 +108,7 @@ By Theorem \ref{thm2},
   \]
 By Borel-Cantelli lemma, we get
 
-for $a.e.~\omega$, $\exists N$, s.t. $\forall n>N$, $\omega\in\Omega_{\delta,n}$, i.e. $m(B_{[n+1,3n+1,\omega]}^-)\leq e^{-(\eta-\delta)(2n+1)}.$
+for $a.e.~\omega$, $\exists N$, s.t. $\forall n>N$, $\omega\in\Omega_{\delta,n}$, i.e. $m(B_{[n+1,3n+1],\omega}^-)\leq e^{-(\eta-\delta)(2n+1)}.$
 Similar for $[-n,n]$, pick insection for $\Omega_1$, and maximum for $N_1$.
 \end{proof}
 
@@ -123,7 +123,7 @@ Similar for $[-n,n]$, pick insection for $\Omega_1$, and maximum for $N_1$.
     \end{aligned}
   \]
 \end{thm}
-\begin{cor}
+\begin{cor}\label{omega2}
   $\forall \omega\in\Omega_2$, $\exists N_2=N_2(\omega)$, s.t. $\forall n>N_2$,
   \[
     \begin{aligned}
@@ -145,10 +145,13 @@ Similar for $[-n,n]$, pick insection for $\Omega_1$, and maximum for $N_1$.
 %     \item $\varlimsup_{n\to\infty} \frac{1}{n+1} ln\Vert T_{[n+1,2n+1],E,\omega}\Vert$ is submean
 %   \end{enumerate}
 % \end{proof}
-\begin{thm}
-   $K>0$, For a.e.$\omega$(denote as $\Omega_3=\Omega_3(K)$), $\exists N_3=N_3(\omega)$, $\forall n>N_3$, $\forall E_{j,[n+1,3n+1],\omega}$ being eigenvalue of $H_{[n+1,3n+1],\omega}$, $\forall y_1,y_2$ satisfy $-n\leq y_1\leq y_2\leq n$,  $\abs{-n-y_1}>\frac{n}{K}$, and $\abs{n-y_2}>\frac{n}{K}$,
+\begin{thm}\label{omega3}
+   $K>0$, For a.e.$\omega$(denote as $\Omega_3=\Omega_3(K)$), $\exists N_3=N_3(\omega)$, $\forall n>N_3$, $\forall E_{j,[n+1,3n+1],\omega}$ being eigenvalue of $H_{[n+1,3n+1],\omega}$, $\forall y_1,y_2$ satisfy $-n\leq y_1\leq y_2\leq n$,  $\abs{-n-y_1}\geq\frac{n}{K}$, and $\abs{n-y_2}\geq\frac{n}{K}$,
  we have $E_{j,[n+1,3n+1],\omega}\notin B_{[-n,y_1],\omega}\cup B_{[y_2,n],\omega}$.
 \end{thm}
+\begin{remark}
+  Note that $K>0$ is not determined yet, we're gonna determine it later on.
+\end{remark}
 
 \begin{proof}
 In order to use Borel-Cantelli, one need to estimate
@@ -189,10 +192,10 @@ Br \eqref{ldt},
 \]
 So
 \[
-P\left(B_{[y_2,n],E_{j,[n+1,3n+1],\omega}}\right)\leq Ce^{\abs{n-y_2-}}\leq Ce^
+P\left(B_{[y_2,n],E_{j,[n+1,3n+1],\omega}}\right)\leq Ce^{-\abs{n-y_2-}}\leq Ce^{-n/K}
 \]
 \[
-\bar{P}\leq C(2n+1)^3e^{\abs{n-y_2-}}
+\bar{P}\leq C(2n+1)^3e^{-n/K}
 \]
 The sum over n is finite, use Borel-Cantelli, we can get the result.
 \end{proof}

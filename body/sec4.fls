@@ -1,0 +1,7 @@
+PWD C:/Users/Enaxis/Desktop/phd paper1/body
+INPUT C:/Users/Enaxis/AppData/Local/MiKTeX/2.9/miktex/data/le/pdftex/pdflatex.fmt
+INPUT sec4.tex
+OUTPUT sec4.log
+INPUT D:/tool/MiKTeX/fonts/tfm/public/cm/cmbx10.tfm
+OUTPUT sec4.pdf
+INPUT C:/Users/Enaxis/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map

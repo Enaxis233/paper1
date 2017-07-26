@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.7.22)  25 JUL 2017 18:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.7.22)  26 JUL 2017 15:36
 entering extended mode
 **./main.tex
 (main.tex
@@ -242,8 +242,10 @@ LaTeX Font Info:    Redeclaring math accent \widehat on input line 944.
 LaTeX Font Info:    Redeclaring math accent \widetilde on input line 946.
 ))
 \c@thm=\count103
-\c@definition=\count104
-\c@remark=\count105
+\c@lemma=\count104
+\c@cor=\count105
+\c@definition=\count106
+\c@remark=\count107
 ) (main.aux)
 \openout1 = `main.aux'.
 
@@ -271,41 +273,55 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (body/intro.tex) (body/sec1.tex)
 (body/sec2.tex [1{C:/Users/Enaxis/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex
 .map}] [2]) (body/sec3.tex [3] [4]
-Overfull \hbox (2.04178pt too wide) detected at line 167
+Overfull \hbox (2.04178pt too wide) detected at line 170
 [][]
  []
 
-[5]) (main.bbl) [6] (main.aux) ) 
+[5]) (body/sec4.tex
+body/sec4.tex:2: Double subscript
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+
+LaTeX Warning: Reference `thm3' on page 6 undefined on input line 25.
+
+[6]
+
+LaTeX Warning: Reference `thm3' on page 7 undefined on input line 49.
+
+) (main.bbl) [7] (main.aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 1981 strings out of 495232
- 20958 string characters out of 3182608
+ 1995 strings out of 495232
+ 21018 string characters out of 3182608
  74117 words of memory out of 3000000
- 5108 multiletter control sequences out of 15000+200000
+ 5119 multiletter control sequences out of 15000+200000
  15279 words of font info for 54 fonts, out of 3000000 for 9000
  175 hyphenation exceptions out of 8191
  34i,16n,32p,1182b,264s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\Enaxis\AppData\Local\MiKTeX\2.9\font
-s\pk\ljfour\public\mathabx\dpi600\matha5.pk> <C:\Users\Enaxis\AppData\Local\MiK
-TeX\2.9\fonts\pk\ljfour\public\mathabx\dpi600\mathx10.pk> <C:\Users\Enaxis\AppD
-ata\Local\MiKTeX\2.9\fonts\pk\ljfour\public\mathabx\dpi600\matha7.pk> <C:\Users
-\Enaxis\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\mathabx\dpi600\matha10.
-pk> <C:\Users\Enaxis\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\mathabx\dp
-i600\mathb10.pk><D:/tool/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><D:/t
-ool/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><D:/tool/MiKTeX/fonts/typ
-e1/public/amsfonts/cm/cmmi10.pfb><D:/tool/MiKTeX/fonts/type1/public/amsfonts/cm
-/cmmi5.pfb><D:/tool/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><D:/tool/Mi
-KTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/tool/MiKTeX/fonts/type1/publi
-c/amsfonts/cm/cmr5.pfb><D:/tool/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb>
-<D:/tool/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/tool/MiKTeX/fonts/t
-ype1/public/amsfonts/cm/cmsy10.pfb><D:/tool/MiKTeX/fonts/type1/public/amsfonts/
-cm/cmsy7.pfb><D:/tool/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><D:/tool
-/MiKTeX/fonts/type1/public/amsfonts/cm/cmti8.pfb><D:/tool/MiKTeX/fonts/type1/pu
-blic/amsfonts/symbols/msam10.pfb><D:/tool/MiKTeX/fonts/type1/public/amsfonts/sy
-mbols/msbm10.pfb><D:/tool/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-
-Output written on main.pdf (6 pages, 241875 bytes).
+ <C:\Users\Enaxis\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\mathabx\dpi
+600\matha5.pk> <C:\Users\Enaxis\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public
+\mathabx\dpi600\mathx10.pk> <C:\Users\Enaxis\AppData\Local\MiKTeX\2.9\fonts\pk\
+ljfour\public\mathabx\dpi600\matha7.pk> <C:\Users\Enaxis\AppData\Local\MiKTeX\2
+.9\fonts\pk\ljfour\public\mathabx\dpi600\matha10.pk> <C:\Users\Enaxis\AppData\L
+ocal\MiKTeX\2.9\fonts\pk\ljfour\public\mathabx\dpi600\mathb10.pk><D:/tool/MiKTe
+X/fonts/type1/public/amsfonts/cm/cmbx10.pfb><D:/tool/MiKTeX/fonts/type1/public/
+amsfonts/cm/cmcsc10.pfb><D:/tool/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.p
+fb><D:/tool/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><D:/tool/MiKTeX/fon
+ts/type1/public/amsfonts/cm/cmmi7.pfb><D:/tool/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmr10.pfb><D:/tool/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><D:/too
+l/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><D:/tool/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmr8.pfb><D:/tool/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10
+.pfb><D:/tool/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><D:/tool/MiKTeX/f
+onts/type1/public/amsfonts/cm/cmti10.pfb><D:/tool/MiKTeX/fonts/type1/public/ams
+fonts/cm/cmti8.pfb><D:/tool/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.p
+fb><D:/tool/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><D:/tool/MiKT
+eX/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
+Output written on main.pdf (7 pages, 249123 bytes).
 PDF statistics:
- 168 PDF objects out of 1000 (max. 8388607)
+ 180 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

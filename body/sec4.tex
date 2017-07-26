@@ -1,5 +1,72 @@
 \section{???}
-Let $\Omega_0=\Omega_1\cap\Omega_2\cap\Omega_3$, pick $\tilde{\omega}\in\Omega_0$, take $\tilde{E}$ a g.e.v. for $H_{\tilde{\omega}}$.
+Let $\Omega_0=\Omega_1\cap\Omega_2\cap\Omega_3_(K)$($K$ is to be determined later), pick $\tilde{\omega}\in\Omega_0$, take $\tilde{E}$ a g.e.v. for $H_{\tilde{\omega}}$.
 WLOG assume $\Psi(0)\neq 0$, then $\exists N_4$, s.t. $\forall n>N_4$, 0 is $(\gamma(\tilde{E})),n,\tilde{E},\tilde{\omega})$-singular.
 
-Assume $2n+1$ is not eventually $(\gamma(\tilde{E})),n,\tilde{E},\tilde{\omega})$-regular, then $\exists \{n_k\}$ with $\lim_{k\to\infty} n_k=\infty$, s.t. $2n_k+1$ is  $(\gamma(\tilde{E})),n_k,\tilde{E},\tilde{\omega})$-singular
+Assume $2n+1$ is not eventually $(\gamma(\tilde{E})),n,\tilde{E},\tilde{\omega})$-regular, then $\exists \{n_k\}$ with $n_k\to\infty$, s.t. $2n_k+1$ is  $(\gamma(\tilde{E})),n_k,\tilde{E},\tilde{\omega})$-singular.
+
+Then, for those $n_k>N_0=\max{N_1,N_2,N_3,N_4}$,WLOG use $\{n\}$ istead of $\{n_k\}$, we have that
+\begin{itemize}
+  \item Both $0$ and $n$ is $(\gamma(\tilde{E})),n,\tilde{E},\tilde{\omega})$-singular. (We focus on $n$ below, $0$ is similar.)
+  \item So by lemma \ref{lemma1},  $\tilde{E}\in B_{[n+1,3n+1],\tilde{\omega}}^-\cup B_{[n+1,2n+1],\tilde{\omega}}^+\cup B_{[2n+1,3n+1],\tilde{\omega}}^+$.
+  \item By corollary \ref{omega2} and definition \ref{B+}, $\tilde{E}\notin B_{[n+1,2n+1],\tilde{\omega}}^+\cup B_{[2n+1,3n+1],\tilde{\omega}}^+$, it can only lies in $B_{[n+1,3n+1],\tilde{\omega}}^-$
+  \item But
+  \begin{equation}\label{bad}
+    B_{[n+1,3n+1],\tilde{\omega}}^-\subset \left\{E:|P_{[n+1,3n+1],E,\tilde{\omega}}|\leq e^{(\gamma(E)-\epsilon)(2n+1)}\right\}
+  \end{equation}
+  by definition \ref{B-}.
+   Note that $P_{[n+1,3n+1],E,\tilde{\omega}}$ is indeed a polynomial in $E$ and have $2n+1$ zeros (e.v.), which are all in the bad set \eqref{bad}. So this bad set \eqref{bad} contains less than $2n+1$ intervals near the zeros. $\tilde{E}$ should lie in one of them. And by Theorem \ref{omega1}, $m(B_{[n+1,3n+1],\tilde{\omega}}^-)\leq Ce^{-(\eta-\delta)(2n+1)}$
+   \[
+   \vert\tilde{E}-E_{j,[n+1,3n+1],\tilde{\omega}}\vert\leq e^{-(\eta-\delta)(2n+1)}?
+   \]
+   similarly,
+   \[
+   \vert\tilde{E}-E_{i,[-n,n],\tilde{\omega}}\vert\leq e^{-(\eta-\delta)(2n+1)}
+   \]
+   \item So $\vert E_{i,[-n,n],\tilde{\omega}}-E_{j,[n+1,3n+1],\tilde{\omega}}\vert\leq 2e^{-(\eta-\delta)(2n+1)}$. However, by Theorem \ref{thm3}, one have $E_{j,[n+1,3n+1],\tilde{\omega}}\notin B_{[-n,n],\tilde{\omega}}$, while $E_{i,[-n,n],\tilde{\omega}}\in B_{[-n,n],\tilde{\omega}}$
+   This will give us a contradiction.
+\end{itemize}
+
+\begin{proof}[proof of contradiction]
+Since $E_{j,[n+1,3n+1],\omega}\notin B_{[-n,n],\tilde{\omega}}$,i.e.
+$\exists A_{[-n,n]}\in\mathbb{A}_{[-n,n]}$,
+\[
+\vert P_{A_{[-n,n]},E_{j,[n+1,3n+1],\omega},\tilde{\omega}}\vert\geq e^{(\gamma(E_j)-\epsilon)(2n+1)}
+\]
+But $\vert E_{i,[-n,n],\tilde{\omega}}-E_{j,[n+1,3n+1],\tilde{\omega}}\vert\leq 2e^{-(\eta-\delta)(2n+1)}$ and $E_{i,[-n,n],\tilde{\omega}}$ being the e.v. gives us
+\[
+  \left\Vert G_{[-n,n],E_{j,[n+1,3n+1],\tilde{\omega}},\tilde{\omega}}\right\Vert\geq \frac{1}{2}e^{(\eta-\delta)(2n+1)}
+\]
+So $\exists y_{n1},y_{n2}\in A_{[-n,n]}$ s.t.
+\[
+  \left\vert G_{[-n,n],E_{j,[n+1,3n+1],\tilde{\omega}},\tilde{\omega}}(y_{n1},y_{n2})\right\vert\geq \frac{1}{2}e^{(\eta-\delta)(2n+1)}
+\]
+Denote $A_{[-n,n]}=[x_{n1},x_{n2}]$, so
+\begin{equation}\label{last}
+  \left\Vert P_{[x_{n1},y_{n1}],E_j}P_{[y_{n2},x_{n2}],E_j}\right\Vert\geq\frac{1}{2}e^{(\eta-\delta)(2n+1)}e^{(\gamma(E_j)-\epsilon)(2n+1)}
+\end{equation}
+Let $M= sup\{|V|+|E_i|+|E_j|+2\}$, where $|V|$ is assumed bounded, $E_i,E_j$ are bounded because they are close to $E\in I$. Then pick $\epsilon$ small enough s.t.
+  \[L:=e^{(\eta-\delta)}e^{(\gamma(E_j)-\epsilon)}>1\]
+Pick $K$ in Theorem \ref{thm3} to be s.t.
+  \[(3M)^{\frac{1}{K}}<L\]
+then for left hand side of \ref{last}, there are three cases:
+\begin{enumerate}
+  \item both $|x_{1n}-y_{1n}|>\frac{n}{K}$ and $|x_{2n}-y_{2n}|>\frac{n}{K}$
+  \item one of them is large, say $|x_{1n}-y_{1n}|>\frac{n}{K}$ and $|x_{2n}-y{2n}|\leq\frac{n}{K}$
+  \item both small.
+\end{enumerate}
+
+for $(1)$,
+\[
+\frac{1}{2}e^{(\eta-\delta+\gamma(E_j)-\epsilon)(2n+1)}\leq e^{(\gamma(E_j)+\epsilon)(2n+1)}
+\]
+but for $\epsilon$ small enough, we can make $\eta-\delta+\gamma(E_j)-\epsilon>\gamma(E_j)+\epsilon$. Then for $n$ large enough, we get contradiction.
+
+for $(2)$, similarly
+\[
+  \begin{aligned}
+    \frac{1}{2}e^{(\eta-\delta+\gamma(E_j)-\epsilon)(2n+1)}
+    &\leq e^{(\gamma(E_j)+\epsilon)(n+1)}(3M)^{\frac{n}{K}}\\
+    &\leq e^{(\gamma(E_j)+\epsilon)(n+1)}
+  \end{aligned}
+\]
+\end{proof}

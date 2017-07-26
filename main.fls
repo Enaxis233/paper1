@@ -80,6 +80,8 @@ OUTPUT main.pdf
 INPUT C:/Users/Enaxis/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map
 INPUT body/sec3.tex
 INPUT body/sec3.tex
+INPUT body/sec4.tex
+INPUT body/sec4.tex
 INPUT main.bbl
 INPUT main.bbl
 INPUT main.aux
