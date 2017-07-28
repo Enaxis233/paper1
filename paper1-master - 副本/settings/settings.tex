@@ -1,0 +1,40 @@
+% \usepackage{ifsym}
+\usepackage{amsfonts}
+ \usepackage{mathabx}
+%     If your article includes graphics, uncomment this command.
+% \usepackage{graphicx}
+%
+% \DeclareMathOperator*{\cart}{\times}
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+% \newtheorem{ex}[thm]{Example}
+% \newtheorem{xca}[theorem]{Exercise}
+
+\theoremstyle{remark}
+\newtheorem{remark}{Remark}
+
+\numberwithin{equation}{section}
+
+% ===========================================================================
+
+%    Absolute value notation
+\newcommand{\abs}[1]{\lvert#1\rvert}
+
+% ===========================================================================
+
+%    Blank box placeholder for figures (to avoid requiring any
+%    particular graphics capabilities for printing this document).
+\newcommand{\blankbox}[2]{%
+  \parbox{\columnwidth}{\centering
+%    Set fboxsep to 0 so that the actual size of the box will match the
+%    given measurements more closely.
+    \setlength{\fboxsep}{0pt}%
+    \fbox{\raisebox{0pt}[#2]{\hspace{#1}}}%
+  }%
+}
+
+% ===========================================================================
