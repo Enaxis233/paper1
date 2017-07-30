@@ -6,39 +6,45 @@
 We introduce the large deviation theorem here without proof.
 \cite{tsay1999some}
 \begin{lemma}[large deviation estimates]
-  For any $\epsilon>0$, there exists $\eta=\eta(\epsilon)>0$ such that, $\exists N_0$, $ \forall b-a>N_0$
+  For any $\epsilon>0$, there exists $\eta=\eta(\epsilon)>0$ such that, $\exists N_0=N_0(\epsilon)$, $ \forall b-a>N_0$
   \[
   \mu \left\{ \omega:\left\vert \frac{1}{b-a+1} ln\Vert P_{[a,b],E,\omega}\Vert-\gamma(E) \right\vert\geq\epsilon
    \right\} \leq e^{-\eta (b-a+1)}
   \]
 \end{lemma}
 \begin{remark}
-  If we denote
-\[
-\begin{split}
-    B_{[a,b],\epsilon}=&\left\{(E,\omega): |P_{[a,b],E,\omega}|\geq e^{(\gamma(E)+\epsilon)(b-a+1)}\right\} \\
-    &\bigcup \left\{(E,\omega): |P_{[a,b],E,\omega}|\leq e^{(\gamma(E)-\epsilon)(b-a+1)}\right\}
-\end{split}
-\]
-  we find that
-  \[
-    B_{[a,b],\epsilon}\subseteq\left\{(E,\omega):\left\vert\frac{1}{b-a+1} ln\Vert P_{[a,b],E,\omega}\Vert-\gamma(E)\right\vert \geq\epsilon \right\}
-  \]
-  This is the "bad" set. And Large deviation theorem gives us the estimates that for all $E,a,b$
-\begin{equation}\label{ldt}
-  P(\{\omega:(E,\omega)\in B_{[a,b],\epsilon}\})\leq e^{-\eta(b-a+1)}
-\end{equation}
-Moreover, we denote
+%   If we denote
+% \[
+% \begin{split}
+%     B_{[a,b],\epsilon}=&\left\{(E,\omega): |P_{[a,b],E,\omega}|\geq e^{(\gamma(E)+\epsilon)(b-a+1)}\right\} \\
+%     &\bigcup \left\{(E,\omega): |P_{[a,b],E,\omega}|\leq e^{(\gamma(E)-\epsilon)(b-a+1)}\right\}
+% \end{split}
+% \]
+%   we find that
+%   \[
+%     B_{[a,b],\epsilon}\subseteq\left\{(E,\omega):\left\vert\frac{1}{b-a+1} ln\Vert P_{[a,b],E,\omega}\Vert-\gamma(E)\right\vert \geq\epsilon \right\}
+%   \]
+%   This is the "bad" set. And Large deviation theorem gives us the estimates that for all $E,a,b$
+% \begin{equation}\label{ldt}
+%   P(\{\omega:(E,\omega)\in B_{[a,b],\epsilon}\})\leq e^{-\eta(b-a+1)}
+% \end{equation}
+% Moreover, we denote
+Denote
 \begin{equation}\label{B+}
     B_{[a,b],\epsilon}^{+} =\left\{(E,\omega): |P_{[a,b],E,\omega}|\geq e^{(\gamma(E)+\epsilon)(b-a+1)}\right\}
 \end{equation}
 \begin{equation}\label{B-}
     B_{[a,b],\epsilon}^{-} =\left\{(E,\omega): |P_{[a,b],E,\omega}|\leq e^{(\gamma(E)-\epsilon)(b-a+1)}\right\}\
 \end{equation}
-and denote $B_{[a,b],\epsilon,E}=\{\omega:(E,\omega)\in B_{[a,b]}\}$. Others similar.
+and denote $B_{[a,b],\epsilon,E}^{\pm}=\{\omega:(E,\omega)\in B_{[a,b],\epsilon}\}^{\pm}$.
+And large deviation theorem gives us the estimates that for all $E, a, b,\epsilon$
+\begin{equation}\label{ldt}
+P(B_{[a,b],\epsilon,E})\leq e^{-\eta(b-a+1)}
+\end{equation}
+Also, denote $E_{j,[a,b],\omega},~j=1,2,\cdot,b-a+1$ as eigenvalues of $H_{[a,b],\omega}$.
 \end{remark}
 
-Assume $\epsilon=\epsilon_0<\frac{1}{8}\nu$ is fixed for now,s.t. so we omit it from $B_{[a,b]}$ untill Theorem \ref{omega3}. And $\eta_0$ is the corresponding parameter
+Assume $\epsilon=\epsilon_0<\frac{1}{8}\nu$ is fixed for now, so we omit it from the notations untill Theorem \ref{omega3}. And $\eta_0$ is the corresponding parameter
 \begin{lemma}\label{lemma1}
  $n \geq 2$, if $x$ is $(\gamma(E)-8\epsilon_0,n,E,\omega)$-singular, then $(E,\omega)\in B_{[x-n,x+n]}^-\cup B_{[x-n,x]}^+\cup B_{[x,x+n]}^+$.
 \end{lemma}
@@ -49,65 +55,66 @@ Assume $\epsilon=\epsilon_0<\frac{1}{8}\nu$ is fixed for now,s.t. so we omit it 
   \]
 \end{remark}
 \begin{proof}
-Assume not, then
-\[
-  \left\{
-  \begin{aligned}
-     & |P_{[x-n,x+n],E,\omega}|\geq e^{(\gamma(E)+\epsilon_0)(2n+1)} \\
-     & |P_{[x-n,x],E,\omega}|\leq e^{(\gamma(E)-\epsilon_0)(n+1)} \\
-     & |P_{[x,x+n],E,\omega}|\leq e^{(\gamma(E)-\epsilon_0)(n+1)}
-  \end{aligned}
-  \right.
-\]
-So we can estimate
-\[
-  \begin{aligned}
-    \left\vert G_{[x-n,x+n],E,\omega}(x,x-n)\right\vert
-    &=  \frac{\left\vert P_{[x,x+n],E,\omega}\right\vert}{\left\vert P_{[x-n,x+n],E,\omega}\right\vert}\\
-    &\leq  \frac{e^{(\gamma(E)+\epsilon_0)(n+1)}}{e^{(\gamma(E)-\epsilon_0)(2n+1)}}\\
-    &\leq  e^{-\gamma(E)(n)+\epsilon_0(3n+2)}\\
-    &\leq  e^{-(\gamma(E)-8\epsilon_0)n}
-  \end{aligned}
-\]
-Similar for $G_{[x-n,x+n],E,\omega}(x,x+n)$.
-Thus $x$ is $(\gamma(E))-8\epsilon_0, n, E,\omega)$-regular, contradiction.
+Follows imediately from definition of singularity and \eqref{A}.
+% Assume not, then
+% \[
+%   \left\{
+%   \begin{aligned}
+%      & |P_{[x-n,x+n],E,\omega}|\geq e^{(\gamma(E)+\epsilon_0)(2n+1)} \\
+%      & |P_{[x-n,x],E,\omega}|\leq e^{(\gamma(E)-\epsilon_0)(n+1)} \\
+%      & |P_{[x,x+n],E,\omega}|\leq e^{(\gamma(E)-\epsilon_0)(n+1)}
+%   \end{aligned}
+%   \right.
+% \]
+% So we can estimate
+% \[
+%   \begin{aligned}
+%     \left\vert G_{[x-n,x+n],E,\omega}(x,x-n)\right\vert
+%     &=  \frac{\left\vert P_{[x,x+n],E,\omega}\right\vert}{\left\vert P_{[x-n,x+n],E,\omega}\right\vert}\\
+%     &\leq  \frac{e^{(\gamma(E)+\epsilon_0)(n+1)}}{e^{(\gamma(E)-\epsilon_0)(2n+1)}}\\
+%     &\leq  e^{-\gamma(E)(n)+\epsilon_0(3n+2)}\\
+%     &\leq  e^{-(\gamma(E)-8\epsilon_0)n}
+%   \end{aligned}
+% \]
+% Similar for $G_{[x-n,x+n],E,\omega}(x,x+n)$.
+% Thus $x$ is $(\gamma(E))-8\epsilon_0, n, E,\omega)$-regular, contradiction.
 \end{proof}
 
-By Theorem \ref{thm2},
+% By Theorem \ref{thm2},
 % From lemma \ref{lemma1}, we get our first restriction on $\Omega$ to make the bad sets have small measure.
 
 \begin{thm}\label{omega1}
-  Let $0<\delta_0<\eta_0$, Let $E\in I$. For a.e. $\omega$ (denote as $\Omega_1$), $\exists N_1=N_1(\omega)$, s.t. $\forall n>N_1$, $m(B_{[n+1,3n+1],\omega}^-)\leq e^{-(\eta_0-\delta_0)(2n+1)}$ and $m(B_{[-n,n],\omega}^-)\leq e^{-(\eta_0-\delta_0)(2n+1)}$
+  Let $0<\delta_0<\eta_0$, for a.e. $\omega$ (denote as $\Omega_1$), $\exists N_1=N_1(\omega)$, s.t. $\forall n>N_1$, $m(B_{[n+1,3n+1],\omega}^-)\leq e^{-(\eta_0-\delta_0)(2n+1)}$ and $m(B_{[-n,n],\omega}^-)\leq e^{-(\eta_0-\delta_0)(2n+1)}$
 \end{thm}
 
 \begin{proof}
-  We only prove for $m(B_{[n+1,3n+1],\omega}^-)$.
-
-  By \eqref{ldt}, $\forall E\in I$, $P(B_{[n+1,3n+1],E}^-)\leq Ce^{-\eta_0(2n+1)}$.
+  By \eqref{ldt}, $\forall E\in I$, $P(B_{[n+1,3n+1],E}^-)\leq e^{-\eta_0(2n+1)}$ and $P(B_{[-n,n],E}^-)\leq e^{-\eta_0(2n+1)}$
 
   If we denote
     \[
-      \Omega_{\delta_0,n}=\left\{\omega:m(B_{[n+1,3n+1],\omega}^-)\leq e^{-(\eta_0-\delta_0)(2n+1)}\right\}
+      \Omega_{\delta_0,n,+}=\left\{\omega:m(B_{[n+1,3n+1],\omega}^-)\leq e^{-(\eta_0-\delta_0)(2n+1)}\right\}
+    \]
+    \[
+    \Omega_{\delta_0,n,-}=\left\{\omega:m(B_{[-n,n],\omega}^-)\leq e^{-(\eta_0-\delta_0)(2n+1)}\right\}
     \]
 
-  By chebyshev,
+  By Tchebyshev,
   \[
-    \begin{aligned}
-      P(\Omega_{\delta_0,n}^c)
-      &\leq e^{(\eta_0-\delta_0)n}\int_{\Omega} m(B_{[n+1,3n+1],\omega})dP\omega\\
-      &=    e^{(\eta_0-\delta_0)n}\int_I P(B_{[n+1,3n+1],E})dx\\
-      &\leq e^{(\eta_0-\delta_0)n}m(I)e^{-\eta_0(2n+1)}\\
-      &=m(I)e^{-\delta(2n+1)}
-    \end{aligned}
+      P(\Omega_{\delta_0,n,\pm}^c)
+      % &\leq e^{(\eta_0-\delta_0)n}\int_{\Omega} m(B_{[n+1,3n+1],\omega})dP\omega\\
+      % &=    e^{(\eta_0-\delta_0)n}\int_I P(B_{[n+1,3n+1],E})dx\\
+      % &\leq e^{(\eta_0-\delta_0)n}m(I)e^{-\eta_0(2n+1)}\\
+      \leq m(I)e^{-\delta_0(2n+1)}
   \]
-By Borel-Cantelli lemma, we get
-
-for $a.e.~\omega$, $\exists N$, s.t. $\forall n>N$, $\omega\in\Omega_{\delta,n}$, i.e. $m(B_{[n+1,3n+1],\omega}^-)\leq e^{-(\eta_0-\delta_0)(2n+1)}.$
-Similar for $[-n,n]$, pick insection for $\Omega_1$, and maximum for $N_1$.
+By Borel-Cantelli lemma, we get for $a.e.~\omega$,
+\[
+\max\{m(B_{[n+1,3n+1],\omega}^-),m(B_{[-n,n],\omega}^-)\}\leq e^{-(\eta_0-\delta_0)(2n+1)},
+\]
+for $n>N_1(\omega)$.
 \end{proof}
 
 \begin{thm}[Craig-Simon]
-  For a.e.$\omega$(denote as $\Omega_2$), we have
+  For a.e.$\omega$(denote as $\Omega_2$), for all $E$, we have
   \[
     \begin{aligned}
       &\varlimsup_{n\to\infty} \frac{1}{n+1} ln\Vert T_{[-n,0],E,\omega}\Vert\leq\gamma(E)\\
@@ -118,7 +125,7 @@ Similar for $[-n,n]$, pick insection for $\Omega_1$, and maximum for $N_1$.
   \]
 \end{thm}
 \begin{cor}\label{omega2}
-  $\forall \omega\in\Omega_2$, $\exists N_2=N_2(\omega)$, s.t. $\forall n>N_2$,
+  $\forall \omega\in\Omega_2,~\forall E$, $\exists N_2=N_2(\omega,E)$, s.t. $\forall n>N_2$,
   \[
     \begin{aligned}
       &\Vert T_{[-n,0],E,\omega}\Vert< e^{(\gamma(E)+\epsilon)(n+1)}\\
@@ -129,7 +136,8 @@ Similar for $[-n,n]$, pick insection for $\Omega_1$, and maximum for $N_1$.
   \]
 \end{cor}
 \begin{remark}
-  The only difference between here and \cite{craig1983subharmonicity} is the restrict intervals. As long as one follows the proof there, one can get the results here.
+  % The only difference between here and \cite{craig1983subharmonicity} is the restrict intervals. As long as one follows the proof there, one can get the results here.
+  Need fix.
 \end{remark}
 % \begin{proof}
 %   Only prove $[n+1,2n+1]$ case.\\
@@ -140,56 +148,57 @@ Similar for $[-n,n]$, pick insection for $\Omega_1$, and maximum for $N_1$.
 %   \end{enumerate}
 % \end{proof}
 \begin{thm}\label{omega3}
-   $\epsilon>0,K>0$, For a.e.$\omega$(denote as $\Omega_3=\Omega_3(\epsilon,K)$), $\exists N_3=N_3(\omega)$, $\forall n>N_3$, $\forall E_{j,[n+1,3n+1],\omega}$ being eigenvalue of $H_{[n+1,3n+1],\omega}$, $\forall y_1,y_2$ satisfy $-n\leq y_1\leq y_2\leq n$,  $\abs{-n-y_1}\geq\frac{n}{K}$, and $\abs{n-y_2}\geq\frac{n}{K}$,
+   $\epsilon>0,K>1$, For a.e.$\omega$(denote as $\Omega_3=\Omega_3(\epsilon,K)$), $\exists N_3=N_3(\omega)$, $\forall n>N_3$, $\forall E_{j,[n+1,3n+1],\omega}$, $\forall y_1,y_2$ satisfy $-n\leq y_1\leq y_2\leq n$,  $\abs{-n-y_1}\geq\frac{n}{K}$, and $\abs{n-y_2}\geq\frac{n}{K}$,
  we have $E_{j,[n+1,3n+1],\omega}\notin B_{[-n,y_1],\epsilon,\omega}\cup B_{[y_2,n],\epsilon,\omega}$.
 \end{thm}
 \begin{remark}
-  Note that $\epsilon$ and $K>0$ is not determined yet, we're gonna determine it later on in section 4.
+  Note that $\epsilon$ and $K>0$ is not fixed yet, we're gonna determine it later on in section 4.
 \end{remark}
 
 \begin{proof}
-In order to use Borel-Cantelli, one need to estimate
-\[
-  P\left(\bigcup\limits_{y_1,y_2}\bigcup\limits_{j=1}^{2n+1}
-  B_{[-n,y_1],\epsilon,E_{j,[n+1,3n+1],\omega}}\cup B_{[y_2,n],\epsilon,E_{j,[n+1,3n+1],\omega}}\right)
-\]
-where $y_1,y_2$ satisfy assumptions above. Denote it by $\bar{P}$. Consider
-\[
-  \begin{aligned}
-    P\left(B_{[y_2,n],\epsilon,E_{j,[n+1,3n+1],\omega}}\right)
-    &= \int_\Omega \chi_{B_{[y_2,n],\epsilon,E_{j,[n+1,3n+1],\omega}}} dP\omega\\
-    &= \int_{S^{2n+1}}\left(\int_{\tilde{\Omega}} \chi_{B}~ d\tilde{\mu}\right)d\mu^{2n+1}(\omega_{n+1},\cdots,\omega_{3n+1})\\
-    &=\int_{S^{2n+1}} \tilde{P}(\tilde{B}_{[y_2,n],\epsilon,E_{j,[n+1,3n+1],\omega}})d\mu^{2n+1}(\omega_{n+1},\cdots,\omega_{3n+1})
-  \end{aligned}
-\]
-where for $\tilde{\Omega}$ and $\tilde{\mu}$, one take away the $[n+1,3n+1]$ terms from $\Omega$ and $\mu^{\mathbb{Z}}$
-However, for any fixed $E$, $B_{[y_2,n],\epsilon,E}$ is of the form
-\[
-  \left(\bigotimes\limits_{i\in[y_2,n]}S\right) \times {B'_{[y_2,n],\epsilon}}
-\]
-where
-\[
-  B'_{[y_2,n],\epsilon,E}=\left\{\omega|_{[y_2,n]}:\omega\in B_{[y_2,n],\epsilon,E}\right\}
-\]
-So,
-\[
-  \begin{aligned}
-    P(B_{[y_2,n],\epsilon,E})
-    &= \int_{S^{2n+1}}\left(\int_{\tilde{\Omega}} \chi_{B_{[y_2,n],\epsilon,E}}~ d\tilde{\mu}\right)d\mu^{2n+1}(\omega_{n+1},\cdots,\omega_{3n+1})\\
-    &=\tilde{P}(\tilde{B}_{[y_2,n],E})\times 1\times\cdots\times 1\\
-    &=\tilde{P}(\tilde{B}_{[y_2,n],E})
-  \end{aligned}
-\]
-Br \eqref{ldt},
-\[
-\tilde{P}(\tilde{B}_{[y_2,n],\epsilon,E})\leq Ce^{-\eta\abs{n-y_2}},\quad \forall E
-\]
-So
-\[
-P\left(B_{[y_2,n],\epsilon,E_{j,[n+1,3n+1],\omega}}\right)\leq Ce^{-\abs{n-y_2-}}\leq Ce^{-n/K}
-\]
-\[
-\bar{P}\leq C(2n+1)^3e^{-n/K}
-\]
-The sum over n is finite, use Borel-Cantelli, we can get the result.
+% In order to use Borel-Cantelli, one need to estimate
+% \[
+%   P\left(\bigcup\limits_{y_1,y_2}\bigcup\limits_{j=1}^{2n+1}
+%   B_{[-n,y_1],\epsilon,E_{j,[n+1,3n+1],\omega}}\cup B_{[y_2,n],\epsilon,E_{j,[n+1,3n+1],\omega}}\right)
+% \]
+% where $y_1,y_2$ satisfy assumptions above. Denote it by $\bar{P}$. Consider
+% \[
+%   \begin{aligned}
+%     P\left(B_{[y_2,n],\epsilon,E_{j,[n+1,3n+1],\omega}}\right)
+%     &= \int_\Omega \chi_{B_{[y_2,n],\epsilon,E_{j,[n+1,3n+1],\omega}}} dP\omega\\
+%     &= \int_{S^{2n+1}}\left(\int_{\tilde{\Omega}} \chi_{B}~ d\tilde{\mu}\right)d\mu^{2n+1}(\omega_{n+1},\cdots,\omega_{3n+1})\\
+%     &=\int_{S^{2n+1}} \tilde{P}(\tilde{B}_{[y_2,n],\epsilon,E_{j,[n+1,3n+1],\omega}})d\mu^{2n+1}(\omega_{n+1},\cdots,\omega_{3n+1})
+%   \end{aligned}
+% \]
+% where for $\tilde{\Omega}$ and $\tilde{\mu}$, one take away the $[n+1,3n+1]$ terms from $\Omega$ and $\mu^{\mathbb{Z}}$
+% However, for any fixed $E$, $B_{[y_2,n],\epsilon,E}$ is of the form
+% \[
+%   \left(\bigotimes\limits_{i\in[y_2,n]}S\right) \times {B'_{[y_2,n],\epsilon}}
+% \]
+% where
+% \[
+%   B'_{[y_2,n],\epsilon,E}=\left\{\omega|_{[y_2,n]}:\omega\in B_{[y_2,n],\epsilon,E}\right\}
+% \]
+% So,
+% \[
+%   \begin{aligned}
+%     P(B_{[y_2,n],\epsilon,E})
+%     &= \int_{S^{2n+1}}\left(\int_{\tilde{\Omega}} \chi_{B_{[y_2,n],\epsilon,E}}~ d\tilde{\mu}\right)d\mu^{2n+1}(\omega_{n+1},\cdots,\omega_{3n+1})\\
+%     &=\tilde{P}(\tilde{B}_{[y_2,n],E})\times 1\times\cdots\times 1\\
+%     &=\tilde{P}(\tilde{B}_{[y_2,n],E})
+%   \end{aligned}
+% \]
+% Br \eqref{ldt},
+% \[
+% \tilde{P}(\tilde{B}_{[y_2,n],\epsilon,E})\leq Ce^{-\eta\abs{n-y_2}},\quad \forall E
+% \]
+% So
+% \[
+% P\left(B_{[y_2,n],\epsilon,E_{j,[n+1,3n+1],\omega}}\right)\leq Ce^{-\abs{n-y_2-}}\leq Ce^{-n/K}
+% \]
+% \[
+% \bar{P}\leq C(2n+1)^3e^{-n/K}
+% \]
+% The sum over n is finite, use Borel-Cantelli, we can get the result.
+Need fix.
 \end{proof}

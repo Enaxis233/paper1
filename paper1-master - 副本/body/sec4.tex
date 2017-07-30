@@ -3,23 +3,24 @@
 Let $\Omega_0=\Omega_1\cap\Omega_2\cap\Omega_3(\epsilon,K)$  ($\epsilon,K$ to be determined later), pick $\tilde{\omega}\in\Omega_0$, take $\tilde{E}$ a g.e.v. for $H_{\tilde{\omega}}$.
 WLOG assume $\Psi(0)\neq 0$, then $\exists N_4$, s.t. $\forall n>N_4$, 0 is $(\gamma(\tilde{E})-8\epsilon_0,n,\tilde{E},\tilde{\omega})$-singular.
 
-Assume $2n+1$ is not eventually $(\gamma(\tilde{E})-8\epsilon_0,n,\tilde{E},\tilde{\omega})$-regular, then $\exists \{n_k\}$ with $n_k\to\infty$, s.t. $2n_k+1$ is  $(\gamma(\tilde{E})-3\epsilon_0,n_k,\tilde{E},\tilde{\omega})$-singular.
+% Assume $2n+1$ is not eventually $(\gamma(\tilde{E})-8\epsilon_0,n,\tilde{E},\tilde{\omega})$-regular, then $\exists \{n_k\}$ with $n_k\to\infty$, s.t. $2n_k+1$ is  $(\gamma(\tilde{E})-3\epsilon_0,n_k,\tilde{E},\tilde{\omega})$-singular.
 
-Then, for those $n_k>N_0=\max{N_1,N_2,N_3,N_4}$, WLOG use $\{n\}$ istead of $\{n_k\}$, we have that
+For $n>N_0=\max{N_1,N_2,N_3,N_4}$, assume $2n+1$ is $(\gamma(\tilde{E})-8\epsilon_0,n,\tilde{E},\tilde{\omega})$-singular.
+% WLOG use $\{n\}$ istead of $\{n_k\}$, we have that
 \begin{itemize}
-  \item Both $0$ and $n$ is $(\gamma(\tilde{E})),n,\tilde{E},\tilde{\omega})$-singular. (We focus on $n$ below, $0$ is similar.)
+  \item Both $0$ and $2n+1$ is $(\gamma(\tilde{E})-8\epsilon_0,n,\tilde{E},\tilde{\omega})$-singular.
   \item So by lemma \ref{lemma1},  $\tilde{E}\in B_{[n+1,3n+1],\epsilon_0,\tilde{\omega}}^-\cup B_{[n+1,2n+1],\epsilon_0,\tilde{\omega}}^+\cup B_{[2n+1,3n+1],\epsilon_0,\tilde{\omega}}^+$.
-  \item By corollary \ref{omega2} and definition \ref{B+}, $\tilde{E}\notin B_{[n+1,2n+1],\epsilon_0,\tilde{\omega}}^+\cup B_{[2n+1,3n+1],\epsilon_0,\tilde{\omega}}^+$, it can only lies in $B_{[n+1,3n+1],\epsilon_0,\tilde{\omega}}^-$
-  \item But
-  \begin{equation}\label{bad}
-    B_{[n+1,3n+1],\epsilon_0,\tilde{\omega}}^-= \left\{E:|P_{[n+1,3n+1],\epsilon,E,\tilde{\omega}}|\leq e^{(\gamma(E)-\epsilon_0)(2n+1)}\right\}
-  \end{equation}
-  by definition \ref{B-}.
-   Note that $P_{[n+1,3n+1],\epsilon,\epsilon_0,E,\tilde{\omega}}$ is indeed a polynomial in $E$ and have $2n+1$ zeros (e.v.), which are all in the bad set \eqref{bad}. So this bad set \eqref{bad} contains less than $2n+1$ intervals near the zeros. $\tilde{E}$ should lie in one of them. And by Theorem \ref{omega1}, $m(B_{[n+1,3n+1],\epsilon,\tilde{\omega}}^-)\leq Ce^{-(\eta-\delta)(2n+1)}$. So there is some e.v. $E_{j,[n+1,3n+1],\tilde{\omega}}$ of $H_{[n+1,3n+1],\omega}$ s.t.
+  \item By corollary \ref{omega2} and \eqref{B+}, $\tilde{E}\notin B_{[n+1,2n+1],\epsilon_0,\tilde{\omega}}^+\cup B_{[2n+1,3n+1],\epsilon_0,\tilde{\omega}}^+$, so it can only lies in $B_{[n+1,3n+1],\epsilon_0,\tilde{\omega}}^-$
+  \item
+  % But  by \eqref{B-}.
+  % \begin{equation}\label{bad}
+  %   B_{[n+1,3n+1],\epsilon_0,\tilde{\omega}}^-= \left\{E:|P_{[n+1,3n+1],\epsilon,E,\tilde{\omega}}|\leq e^{(\gamma(E)-\epsilon_0)(2n+1)}\right\}
+  % \end{equation}
+   Note that by \eqref{B-}, $P_{[n+1,3n+1],\epsilon,\epsilon_0,E,\tilde{\omega}}$ in $B=B_{[n+1,3n+1],\epsilon,\tilde{\omega}}$ is a polynomial in $E$ that have $2n+1$ real zeros (eigenvalues of $H_{[n+1,3n+1],\tilde{\omega}}$), which are all in $B$. Thus $B$ contains less than $2n+1$ intervals near the eigenvalues. $\tilde{E}$ should lie in one of them. By Theorem \ref{omega1}, $m(B)\leq Ce^{-(\eta_0-\delta_0)(2n+1)}$. So there is some e.v. $E_{j,[n+1,3n+1],\tilde{\omega}}$ of $H_{[n+1,3n+1],\omega}$ s.t.
    \[
    \vert\tilde{E}-E_{j,[n+1,3n+1],\tilde{\omega}}\vert\leq e^{-(\eta_0-\delta_0)(2n+1)}
    \]
-   similarly, $\exists E_{i,[-n,n],\tilde{\omega}}$, s.t.
+  By the same argument, $\exists E_{i,[-n,n],\tilde{\omega}}$, s.t.
    \[
    \vert\tilde{E}-E_{i,[-n,n],\tilde{\omega}}\vert\leq e^{-(\eta_0-\delta_0)(2n+1)}
    \]
@@ -32,6 +33,7 @@ Since $\vert E_{i,[-n,n],\tilde{\omega}}-E_{j,[n+1,3n+1],\tilde{\omega}}\vert\le
   \left\Vert G_{[-n,n],E_{j,[n+1,3n+1],\tilde{\omega}},\tilde{\omega}}\right\Vert\geq \frac{1}{2}e^{(\eta_0-\delta_0)(2n+1)}
 \]
 So $\exists y_{n1},y_{n2}\in [-n,n]$ s.t.
+NEED FIX
 \[
   \left\vert G_{[-n,n],E_{j,[n+1,3n+1],\tilde{\omega}},\tilde{\omega}}(y_{n1},y_{n2})\right\vert\geq \frac{1}{2}e^{(\eta_0-\delta_0)(2n+1)}
 \]

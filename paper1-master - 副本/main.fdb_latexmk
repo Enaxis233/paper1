@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex main"] 1501210936 "main.aux" "main.bbl" "main" 1501211261
+["bibtex main"] 1501280658 "main.aux" "main.bbl" "main" 1501396149
   "C:/Program Files/MiKTeX 2/bibtex/bst/bibtex/unsrt.bst" 1291868336 18030 1376b4b231b50c66211e47e42eda2875 ""
   "body/mybib1.bib" 1501210668 1957 d2da3b2ac152d985ec5f33b148917ca0 ""
-  "main.aux" 1501211260 1181 fcce30c83fd99643f7dbd1029026a756 ""
+  "main.aux" 1501281071 1105 4b282703c2954c8a97cd5d1b01b46027 ""
   (generated)
   "main.blg"
   "main.bbl"
-["pdflatex"] 1501211259 "main.tex" "main.pdf" "main" 1501211261
+["pdflatex"] 1501281070 "main.tex" "main.pdf" "main" 1501396149
   "C:/Program Files/MiKTeX 2/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233955448 1004 54797486969f23fa377b128694d548df ""
   "C:/Program Files/MiKTeX 2/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1233955448 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
   "C:/Program Files/MiKTeX 2/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1233955454 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -35,7 +35,6 @@
   "C:/Program Files/MiKTeX 2/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1247596667 32762 7fee39e011c23b3589931effd97b9702 ""
   "C:/Program Files/MiKTeX 2/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1247596667 32726 39f0f9e62e84beb801509898a605dbd5 ""
   "C:/Program Files/MiKTeX 2/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1247596667 32569 5e5ddc8df908dea60932f3c484a54c0d ""
-  "C:/Program Files/MiKTeX 2/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1247596666 32716 08e384dc442464e7285e891af9f45947 ""
   "C:/Program Files/MiKTeX 2/fonts/type1/public/amsfonts/cm/cmti10.pfb" 1247596667 37944 359e864bd06cde3b1cf57bb20757fb06 ""
   "C:/Program Files/MiKTeX 2/fonts/type1/public/amsfonts/cm/cmti8.pfb" 1247596666 35660 fb24af7afbadb71801619f1415838111 ""
   "C:/Program Files/MiKTeX 2/fonts/type1/public/amsfonts/symbols/msam10.pfb" 1247596673 31764 459c573c03a4949a528c2cc7f557e217 ""
@@ -71,14 +70,14 @@
   "C:/Users/Enaxis/AppData/Local/MiKTeX/2.9/fonts/tfm/public/mathabx/mathx10.tfm" 1501204863 1520 88530e4e46ef1e4a7103f014512c50d2 ""
   "C:/Users/Enaxis/AppData/Local/MiKTeX/2.9/miktex/data/le/pdftex/pdflatex.fmt" 1500794152 4059200 70ff877a07a675e402c699873c1f54b6 ""
   "body/sec1.tex" 1501206339 1076 8360b4427c5af4425474b72e63b21a88 ""
-  "body/sec2.tex" 1501209823 6139 0d3039e4c2e5e01ed98de0449be05dea ""
-  "body/sec3.tex" 1501211015 9793 b3b6ed70136b61a67c09d8bbf13af25e ""
-  "body/sec4.tex" 1501211253 5629 ae02be2d9d37ccc3be405f4c28704401 ""
-  "main.aux" 1501211260 1181 fcce30c83fd99643f7dbd1029026a756 ""
-  "main.bbl" 1501210936 609 b09a3df1a1ffccc06763566dde7af8a0 "bibtex main"
+  "body/sec2.tex" 1501277940 6151 5e060bdfdb369987c48612c47005428c ""
+  "body/sec3.tex" 1501393019 10308 dea34a5f65325ed14db4f3133fe989e6 ""
+  "body/sec4.tex" 1501280652 5725 b6d154b9b7c964a28bc77025460aafbe ""
+  "main.aux" 1501281071 1105 4b282703c2954c8a97cd5d1b01b46027 ""
+  "main.bbl" 1501280658 422 83bd7eaf173d09e21aac25cdcf433419 "bibtex main"
   "main.tex" 1501210929 449 d0cf29b8b394356fcf80d09e8577b612 ""
   "settings/settings.tex" 1501108651 1232 86037e4f1381d497276f5cefd370af5d ""
   (generated)
   "main.log"
-  "main.aux"
   "main.pdf"
+  "main.aux"
