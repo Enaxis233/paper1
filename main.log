@@ -1,32 +1,32 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.7.22)  26 JUL 2017 15:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.7.23)  28 JUL 2017 15:31
 entering extended mode
 **./main.tex
 (main.tex
-LaTeX2e <2017/01/01> patch level 1
-Babel <3.9r> and hyphenation patterns for 1 language(s) loaded.
-(D:\tool\MiKTeX\tex\latex\amscls\amsart.cls
+LaTeX2e <2017-04-15>
+Babel <3.10> and hyphenation patterns for 75 language(s) loaded.
+("C:\Program Files\MiKTeX 2\tex\latex\amscls\amsart.cls"
 Document Class: amsart 2015/03/04 v2.20.2
 \linespacing=\dimen102
 \normalparindent=\dimen103
 \normaltopskip=\skip41
-(D:\tool\MiKTeX\tex\latex\amsmath\amsmath.sty
+("C:\Program Files\MiKTeX 2\tex\latex\amsmath\amsmath.sty"
 Package: amsmath 2016/11/05 v2.16a AMS math features
 \@mathmargin=\skip42
 
 For additional information on amsmath, use the `?' option.
-(D:\tool\MiKTeX\tex\latex\amsmath\amstext.sty
+("C:\Program Files\MiKTeX 2\tex\latex\amsmath\amstext.sty"
 Package: amstext 2000/06/29 v2.01 AMS text
 
-(D:\tool\MiKTeX\tex\latex\amsmath\amsgen.sty
+("C:\Program Files\MiKTeX 2\tex\latex\amsmath\amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks14
 \ex@=\dimen104
 ))
-(D:\tool\MiKTeX\tex\latex\amsmath\amsbsy.sty
+("C:\Program Files\MiKTeX 2\tex\latex\amsmath\amsbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen105
 )
-(D:\tool\MiKTeX\tex\latex\amsmath\amsopn.sty
+("C:\Program Files\MiKTeX 2\tex\latex\amsmath\amsopn.sty"
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count79
@@ -69,10 +69,10 @@ LaTeX Info: Redefining \] on input line 2818.
 )
 LaTeX Font Info:    Try loading font information for U+msa on input line 388.
 
-(D:\tool\MiKTeX\tex\latex\amsfonts\umsa.fd
+("C:\Program Files\MiKTeX 2\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-(D:\tool\MiKTeX\tex\latex\amsfonts\amsfonts.sty
+("C:\Program Files\MiKTeX 2\tex\latex\amsfonts\amsfonts.sty"
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
@@ -102,14 +102,14 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 \thm@postskip=\skip49
 \thm@headsep=\skip50
 \dth@everypar=\toks24
-) (settings/settings.tex
-(D:\tool\MiKTeX\tex\latex\mathabx\mathabx.sty
+)
+(settings/settings.tex ("C:\Program Files\MiKTeX 2\tex\latex\mathabx\mathabx.st
+y"
 Package: mathabx 2003/07/29 v0.0 Non-standard LaTeX package mathabx
 \symmatha=\mathgroup6
 \symmathb=\mathgroup7
 \symmathx=\mathgroup8
-
-(D:\tool\MiKTeX\tex\generic\mathabx\mathabx.dcl
+ ("C:\Program Files\MiKTeX 2\tex\generic\mathabx\mathabx.dcl"
 LaTeX Font Info:    Redeclaring math symbol \cdotp on input line 25.
 LaTeX Font Info:    Redeclaring math symbol \times on input line 33.
 LaTeX Font Info:    Redeclaring math symbol \div on input line 34.
@@ -263,65 +263,57 @@ LaTeX Font Info:    Checking defaults for U/mathx/m/n on input line 4.
 LaTeX Font Info:    ... okay on input line 4.
 LaTeX Font Info:    Try loading font information for U+msa on input line 4.
 
-(D:\tool\MiKTeX\tex\latex\amsfonts\umsa.fd
+("C:\Program Files\MiKTeX 2\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 4.
 
-(D:\tool\MiKTeX\tex\latex\amsfonts\umsb.fd
+("C:\Program Files\MiKTeX 2\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) (body/intro.tex) (body/sec1.tex)
-(body/sec2.tex [1{C:/Users/Enaxis/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex
-.map}] [2]) (body/sec3.tex [3] [4]
-Overfull \hbox (2.04178pt too wide) detected at line 170
-[][]
- []
-
-[5]) (body/sec4.tex
-body/sec4.tex:2: Double subscript
-I treat `x_1_2' essentially like `x_1{}_2'.
-
-
-LaTeX Warning: Reference `thm3' on page 6 undefined on input line 25.
-
-[6]
-
-LaTeX Warning: Reference `thm3' on page 7 undefined on input line 49.
-
-) (main.bbl) [7] (main.aux)
-
-LaTeX Warning: There were undefined references.
-
- ) 
+) (body/sec1.tex)
+(body/sec2.tex [1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}])
+(body/sec3.tex [2]) (body/sec4.tex [3] [4]) (main.bbl
+Missing character: There is no è in font cmr8!
+Missing character: There is no ” in font cmr8!
+Missing character: There is no ¡ in font cmr8!
+Missing character: There is no å in font cmr8!
+Missing character: There is no ¿ in font cmr8!
+Missing character: There is no — in font cmr8!
+Missing character: There is no è in font cmr8!
+Missing character: There is no ³ in font cmr8!
+Missing character: There is no ¢ in font cmr8!
+) [5] (main.aux) ) 
 Here is how much of TeX's memory you used:
- 1995 strings out of 495232
- 21018 string characters out of 3182608
- 74117 words of memory out of 3000000
- 5119 multiletter control sequences out of 15000+200000
- 15279 words of font info for 54 fonts, out of 3000000 for 9000
- 175 hyphenation exceptions out of 8191
- 34i,16n,32p,1182b,264s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\Enaxis\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\mathabx\dpi
-600\matha5.pk> <C:\Users\Enaxis\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public
-\mathabx\dpi600\mathx10.pk> <C:\Users\Enaxis\AppData\Local\MiKTeX\2.9\fonts\pk\
-ljfour\public\mathabx\dpi600\matha7.pk> <C:\Users\Enaxis\AppData\Local\MiKTeX\2
-.9\fonts\pk\ljfour\public\mathabx\dpi600\matha10.pk> <C:\Users\Enaxis\AppData\L
-ocal\MiKTeX\2.9\fonts\pk\ljfour\public\mathabx\dpi600\mathb10.pk><D:/tool/MiKTe
-X/fonts/type1/public/amsfonts/cm/cmbx10.pfb><D:/tool/MiKTeX/fonts/type1/public/
-amsfonts/cm/cmcsc10.pfb><D:/tool/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.p
-fb><D:/tool/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><D:/tool/MiKTeX/fon
-ts/type1/public/amsfonts/cm/cmmi7.pfb><D:/tool/MiKTeX/fonts/type1/public/amsfon
-ts/cm/cmr10.pfb><D:/tool/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><D:/too
-l/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><D:/tool/MiKTeX/fonts/type1/pu
-blic/amsfonts/cm/cmr8.pfb><D:/tool/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10
-.pfb><D:/tool/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><D:/tool/MiKTeX/f
-onts/type1/public/amsfonts/cm/cmti10.pfb><D:/tool/MiKTeX/fonts/type1/public/ams
-fonts/cm/cmti8.pfb><D:/tool/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.p
-fb><D:/tool/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><D:/tool/MiKT
-eX/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on main.pdf (7 pages, 249123 bytes).
+ 1991 strings out of 493323
+ 21271 string characters out of 3139925
+ 78224 words of memory out of 3000000
+ 5372 multiletter control sequences out of 15000+200000
+ 14978 words of font info for 53 fonts, out of 3000000 for 9000
+ 1302 hyphenation exceptions out of 8191
+ 34i,11n,32p,1182b,230s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\Enaxis\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\pu
+blic\mathabx\dpi600\matha5.pk> <C:\Users\Enaxis\AppData\Local\MiKTeX\2.9\fonts\
+pk\ljfour\public\mathabx\dpi600\mathx10.pk> <C:\Users\Enaxis\AppData\Local\MiKT
+eX\2.9\fonts\pk\ljfour\public\mathabx\dpi600\matha7.pk> <C:\Users\Enaxis\AppDat
+a\Local\MiKTeX\2.9\fonts\pk\ljfour\public\mathabx\dpi600\matha10.pk> <C:\Users\
+Enaxis\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\mathabx\dpi600\mathb10.p
+k><C:/Program Files/MiKTeX 2/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Prog
+ram Files/MiKTeX 2/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files
+/MiKTeX 2/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2/
+fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files/MiKTeX 2/fonts/type1
+/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2/fonts/type1/public/ams
+fonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2/fonts/type1/public/amsfonts/cm/cm
+r5.pfb><C:/Program Files/MiKTeX 2/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/P
+rogram Files/MiKTeX 2/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files
+/MiKTeX 2/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2/
+fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2/fonts/type
+1/public/amsfonts/cm/cmti8.pfb><C:/Program Files/MiKTeX 2/fonts/type1/public/am
+sfonts/symbols/msam10.pfb><C:/Program Files/MiKTeX 2/fonts/type1/public/amsfont
+s/symbols/msbm10.pfb><C:/Program Files/MiKTeX 2/fonts/type1/public/amsfonts/sym
+bols/msbm7.pfb>
+Output written on main.pdf (5 pages, 206521 bytes).
 PDF statistics:
- 180 PDF objects out of 1000 (max. 8388607)
+ 146 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
